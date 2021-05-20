@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: local repeat url("../imagess/background.png");
+    background: local repeat url("imageMovie/background.png");
     font-size: 8pt;
     font-family: Verdana, Tahoma, sans-serif;
     
@@ -10,7 +10,7 @@ body {
   .banner {
     display: flex;
     justify-content: center;
-    background: local repeat-x url("../imagess/bannerbg.png");
+    background: local repeat-x url("imageMovie/bannerbg.png");
   }
   
   .container {
@@ -77,7 +77,7 @@ body {
     padding-left: 12px;
     height: auto;
     min-height: 100% !important;
-    background: local repeat-x url("../imagess/rbg.png");
+    background: local repeat-x url("imageMovie/rbg.png");
     font-size: 48pt;
     color: red;
     font-weight: bold;
