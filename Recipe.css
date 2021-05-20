@@ -58,16 +58,17 @@ abbr{
 }
 
 footer div{
-    float: left;
+    float: right;
 }
 
 footer div.copyRight{
     padding-top: 10px;
     clear: both;
-    text-align: right;
+    text-align: left;
     display: block;
     font-family: monospace;
     line-height: 2px;
+    width:auto
 }
 
 ul{
@@ -88,4 +89,7 @@ ul li:before{
 section div.contentRow{
     margin-top: 0.25em;
     border-bottom: 1px solid #c0c0c0;
+}
+span{
+    width: 100px;
 }
