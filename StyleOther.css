@@ -1,0 +1,51 @@
+body{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top;
+    background-image:url("sky.jpg");
+    background-color: brown;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica;
+    letter-spacing: 0.02em;
+     font-weight: 400;
+    -webkit-font-smoothing: antialiased; 
+}
+
+#image{
+    margin: 10px;
+    background-color: black;
+    border-radius: 5px;
+}
+
+h1{
+   
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: red;
+}
+
+#list{
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: antiquewhite;
+    width: 500px;
+    
+}
+footer{
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: antiquewhite;
+}
+#welcome h1{
+    float: right;
+    background-color: aqua;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(255, 94, 0);
+
+}
