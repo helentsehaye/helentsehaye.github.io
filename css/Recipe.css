@@ -6,7 +6,7 @@ body{
     width: 1024px;
     margin: 0 auto;
     background-color:rgb(207, 171, 193);
-    background-image: url('imageRecipe/silverware.jpg');
+    background-image: url('../imageRecipe/silverware.jpg');
     background-repeat: repeat;
     background-position: center center;
     background-attachment: fixed;
