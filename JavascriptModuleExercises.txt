@@ -107,9 +107,9 @@ add7( );  // final counter value is 21
 
 => Solution:
 var counter = 0;
-function make_adder(inc){
+function make_adder(inc){`	
 	return function(){
-		return counter += param;
+		return counter += inc;
 	}
 }
 9.  Suppose you are given a file of Javascript code containing a list of many function and variable declarations. All of these function and variable names will be added to the Global Javascript namespace. What simple modification to the Javascript file can remove all the names from the Global namespace? 
@@ -148,11 +148,11 @@ var Module = (function(){
 		setAge(newAge);
 	}
 	return{
-		setAge: setAge,
-		setSalary: setSalary,
-		setName: setName,
-		increaseSalary: increaseSalary,
-		incrementAge: incrementAge
+		setAge: setAge(),
+		setSalary: setSalary(),
+		setName: setName(),
+		increaseSalary: increaseSalary(),
+		incrementAge: incrementAge();
 }
 })();
 11.  Rewrite your answer to Question 10 using the Anonymous Object Literal Return Pattern. 
@@ -184,14 +184,14 @@ var Module = (function(){
 	let getName = function ( ){ return name;}
 	//locally scope object
 	let Employee = {};
-		Employee .setAge = function (newAge){ age = newAge;},
-		Employee .setAge = function (newSalary){salary = newSalary;},
-		Employee .setAge = function (newName){name = newName;},
-		Employee .setAge = function (percentage){  
+		Employee.setAge = function (newAge){ age = newAge;},
+		Employee.setSalary= function (newSalary){salary = newSalary;},
+		Employee.setName = function (newName){name = newName;},
+		Employee.increaseSalary = function (percentage){  
 			let newSalary = getSalary() + (getSalary()*percentage);
 			setSalary(newSalary);
 		},
-		Employee .setAge = function ( ){ 
+		Employee.incrementAge = function ( ){ 
 			let newAge = getAge()+1;
 			setAge(newAge);
 		}

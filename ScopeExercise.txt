@@ -12,7 +12,7 @@ Scope Exercise
                         document.write(b);  //iii
                         b = c;
                         var x = 5;
-                    }
+                   - }
                 f(a,b,c);
                 document.write(b);  //iv
              }
