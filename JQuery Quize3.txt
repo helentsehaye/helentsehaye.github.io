@@ -1,3 +1,5 @@
+                                JQuery Quize |||
+
 1. Find the text in the first paragraph (stripping out the html), then set the html of the last paragraph to
 show it is just text (the red bold is gone).
 <!doctype html>
@@ -28,6 +30,8 @@ $( "p" ).last().html( str );
 </script>
 </body>
 </html>
+
+
 2. Write jQuery code to create a red background for the level-2 list items.
 <ul class="level-1">
  <li class="item-i">I</li>
@@ -46,6 +50,9 @@ $( "p" ).last().html( str );
  </li>
  <li class="item-iii">III</li>
 </ul>
+ANSWER=>$(".level-2 li").css("background-color", "red");
+
+
 3. Write jQuery code to select the element that comes immediately before item three and change its
 background color to blue.
 <ul>
@@ -55,11 +62,15 @@ background color to blue.
  <li>list item 4</li>
  <li>list item 5</li>
 </ul>
+ANSWER=> $( "li.third-item" ).prev().css( "background-color", "blue" );
+
 4. Let us one additional requirement for the "Go Vegetarian" button of the Webville Eatery Menu
 described in Chapter 4 of Head First jQuery: "Turkey" in the ingredient list of any entree is replaced by
 "Mashed Potatoes" in the vegetarian version. You may assume there is a class "turkey" that identifies
 these items in the list. Describe the changes to the Javascript (jQuery) code to implement this new
 requirement.
+ANSWER=>=>  $(“. Turkey”).replaceWith(  “<li class=” mashed”> <em>Portobello Mushroom</em> </li>“);
+
 5. Write Javascript (jQuery) code to change the color of the parent and grandparent list items of the span
 of text ("some text") in the following to green.
 <!DOCTYPE html>
@@ -68,6 +79,10 @@ of text ("some text") in the following to green.
 <script>
 $(document).ready(function(){
 <!—INSERT YOUR JQUERY CODE HERE - - >
+
+
+$("span:contains(some text)").parent().parent().css("color", "green");
+           
 });
 </script>
 </head>
