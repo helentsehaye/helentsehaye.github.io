@@ -1,11 +1,12 @@
 $(document).ready(function () {
 	
 	$("form").submit(function(e){	
-	
-		 e.preventDefault();
-		$("#result").html("");
+	  e.preventDefault();
+		
+	  $("#result").html("");
 		var word = $("#term").val();
 		console.log(word + " ajax entry ")
+		
 		$.ajax({
 			"url": "/find",
 			"type": "POST",
@@ -14,6 +15,7 @@ $(document).ready(function () {
 			"success": myAjaxSuccessFunction,
 			"error": ajaxFailure
 		});
+		
 		function myAjaxSuccessFunction(responseData) {
 			// do something with the data
 		//	alert(responseData.data)

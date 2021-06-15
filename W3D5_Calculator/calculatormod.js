@@ -19,7 +19,7 @@ exports.displays=function(req,res,vals){
     res.write("<title>Calculator Web Site</title>"); res.write("</head>");
     res.write("<body>");
     res.write("<p>The result is: ");
-          res.write(String(result));
+    res.write(String(result));
     res.write("</p>");
     res.write("</body>");
     res.write("</html>");

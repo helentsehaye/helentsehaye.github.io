@@ -1,11 +1,9 @@
 $(()=>{
 
     $('#btn').on('click',(event)=>{
-        event.preventDefault();
-        //console.log($("#terms").get(0));
-       // console.log(reqword);
-      var reqword=document.getElementById('term').value;
-       //console.log(reqword);
+        event.preventDefault();/* it means ignore html*/
+        var reqword=document.getElementById('term').value;
+     
        $.post("http://localhost:5000/getAll",{word:reqword})
        .done((data)=>{
            showresult(data);
@@ -16,23 +14,7 @@ $(()=>{
        });
   
     });
-    // $('#form-div').submit((e)=>{
-    //     e.preventDefault();
-    //     var form=$('#form-div');
-    //     $.ajax({
-    //         type: form.attr('method'),
-    //         url: form.attr('action'),
-    //         data:form.serialize(),
-    //         sucess:(data)=>{
-    //             alert(`submitted successfully`)
-    //             console.log(data);
-    //         },
-    //         error:(data)=>{
-    //             console.log('error occured');
-    //             console.log(data);
-    //         }
-    //     });
-    // })
+   
 });
 
 showresult=(val)=>{
@@ -43,6 +25,3 @@ showresult=(val)=>{
     
 }
 
-// var xhttp = new XMLHttpRequest();
-// xhttp.open("GET","app.js",true);
-// xhttp.send(reqword);
